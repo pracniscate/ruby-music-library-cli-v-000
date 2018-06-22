@@ -64,6 +64,6 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     number = gets.chomp.to_i
-    song = Song.all.sort_by!{ |song| song.name }[number - 1] if number > 0 && number < Song.all.length 
+    song = Song.all.sort_by!{ |song| song.name }[number - 1] if number > 0 && number < Song.all.length
   end
 end
